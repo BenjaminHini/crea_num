@@ -8,6 +8,7 @@ var client = null
 var serveur = null
 
 var ip = ""
+var Pseudo_joueur = ""
 
 func _ready() -> void:
 	
@@ -26,6 +27,7 @@ func create_server()-> void:
 	serveur = NetworkedMultiplayerENet.new()
 	serveur.create_server(PORT, JOUEUR_MAX)
 	get_tree().set_network_peer(serveur)	
+	Global.instance_node(load("res://Serveur_Ann.tscn"),get_tree().current_scene)
 	
 func join_server()-> void:	
 	client = NetworkedMultiplayerENet.new()

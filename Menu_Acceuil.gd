@@ -4,7 +4,7 @@ extends Control
 
 
 onready var multijoueur_setup_ui = $Multijoueur_setup
-onready var adressIP_serveur =$Multijoueur_setup/AdresseIP_serveur
+onready var pseudo =$Multijoueur_setup/Saisie_pseudo
 
 onready var adressIP_joueur =$CanvasLayer/AdressIP_joueur
 
@@ -23,13 +23,16 @@ func _joueur_deconnecte(Id) -> void:
 	print("player "+str(Id)+" est deconnecté")
 	
 func _on_heberger_pressed():
-	multijoueur_setup_ui.hide()
-	Reseau.create_server()
-
+	if pseudo.text !="":
+		Reseau.Pseudo_joueur = pseudo.text
+		multijoueur_setup_ui.hide()
+		Reseau.create_server()
+	#instance player
 
 func _on_rejoindre_pressed():
-	if adressIP_serveur.text != "":
+	if pseudo.text !="":
 		multijoueur_setup_ui.hide()
-		Reseau.ip= adressIP_serveur.text
-		Reseau.join_server()
+		pseudo.hide()
+			
+		Global.instance_node(load("res://Recherche_serveur.tscn"),self)
 

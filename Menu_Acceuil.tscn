@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Police_menu.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Menu_Acceuil.gd" type="Script" id=2]
+[ext_resource path="res://background.jpg" type="Texture" id=3]
 
 [node name="Menu_Acceuil" type="Control"]
 anchor_right = 1.0
@@ -48,7 +49,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AdresseIP_serveur" type="LineEdit" parent="Multijoueur_setup"]
+[node name="Saisie_pseudo" type="LineEdit" parent="Multijoueur_setup"]
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -430.0
@@ -57,7 +58,7 @@ margin_right = 415.0
 margin_bottom = 324.0
 custom_fonts/font = ExtResource( 1 )
 align = 1
-placeholder_text = "Adresse IP du serveur"
+placeholder_text = "Pseudonyme"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -75,6 +76,13 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="background" type="Sprite" parent="."]
+process_priority = -1
+show_behind_parent = true
+position = Vector2( 961.576, 518.694 )
+scale = Vector2( 1.21015, 0.934749 )
+texture = ExtResource( 3 )
 
 [connection signal="pressed" from="Multijoueur_setup/heberger" to="." method="_on_heberger_pressed"]
 [connection signal="pressed" from="Multijoueur_setup/rejoindre" to="." method="_on_rejoindre_pressed"]

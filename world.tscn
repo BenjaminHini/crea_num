@@ -6,8 +6,8 @@
 [ext_resource path="res://player.gd" type="Script" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 15.0
-height = 12.0
+radius = 13.6912
+height = 3.86269
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -44,7 +44,7 @@ position = Vector2( -1318, 50 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
-position = Vector2( -1326, 61 )
+position = Vector2( -1326.18, 58.5731 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="player"]
