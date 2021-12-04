@@ -11,7 +11,11 @@ config_version=4
 [application]
 
 config/name="cre_num"
+<<<<<<< Updated upstream
 run/main_scene="res://world.tscn"
+=======
+run/main_scene="res://Menu_Acceuil.tscn"
+>>>>>>> Stashed changes
 config/icon="res://icon.png"
 
 [autoload]
@@ -26,6 +30,24 @@ window/size/test_width=1280
 window/size/test_height=720
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
+<<<<<<< Updated upstream
+=======
+
+[input]
+
+space={
+"deadzone": 0.5,
+"events": [  ]
+}
+right={
+"deadzone": 0.5,
+"events": [  ]
+}
+left={
+"deadzone": 0.5,
+"events": [  ]
+}
+>>>>>>> Stashed changes
 
 [physics]
 

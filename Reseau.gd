@@ -13,9 +13,13 @@ func _ready() -> void:
 	
 	ip=IP.get_local_addresses()[3]
 	
+<<<<<<< Updated upstream
 	for ip2 in IP.get_local_addresses():
 		if ip2.begins_with("192.168."):
 			ip=ip2
+=======
+	
+>>>>>>> Stashed changes
 			
 	get_tree().connect("connected_to_server", self, "_on_connected_to_server")
 	get_tree().connect("server_disconnected", self, "_on_server_disconnected")
