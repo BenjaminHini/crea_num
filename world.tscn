@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://background.jpg" type="Texture" id=1]
-[ext_resource path="res://tiles.tres" type="TileSet" id=2]
+[ext_resource path="res://mieux.tres" type="TileSet" id=2]
 [ext_resource path="res://assets/1 Woodcutter/Woodcutter.png" type="Texture" id=3]
 [ext_resource path="res://player.gd" type="Script" id=4]
 
@@ -37,15 +37,20 @@ height = 15.0
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2( -217, 696 )
 tile_set = ExtResource( 2 )
-cell_size = Vector2( 61, 61 )
+cell_size = Vector2( 70, 70 )
+show_collision = true
 format = 1
-tile_data = PoolIntArray( -327670, 2, 0, -262134, 2, 0, -262133, 2, 0, -262122, 3, 0, -196598, 2, 0, -196597, 2, 0, -196592, 3, 0, -196591, 3, 0, -196584, 3, 0, -131062, 2, 0, -131061, 2, 0, -131060, 2, 0, -131051, 3, 0, -131050, 3, 0, -65526, 2, 0, -65525, 2, 0, -65524, 2, 0, -65523, 1, 0, -65522, 1, 0, -65521, 1, 0, -65520, 1, 0, -65519, 1, 0, -65518, 1, 0, -65517, 1, 0, -65516, 1, 0, -65515, 1, 0, -65514, 1, 0, -65513, 1, 0, -65512, 1, 0, -65511, 1, 0, 11, 2, 0, 12, 2, 0, 13, 2, 0, 14, 2, 0, 15, 2, 0, 16, 2, 0, 17, 2, 0, 18, 2, 0, 19, 2, 0, 20, 2, 0, 21, 2, 0, 22, 2, 0, 23, 2, 0, 24, 2, 0, 65549, 2, 0, 65550, 2, 0, 65551, 2, 0, 65552, 2, 0, 65553, 2, 0, 65554, 2, 0, 65555, 2, 0, 65556, 2, 0, 65557, 2, 0, 65558, 2, 0 )
+tile_data = PoolIntArray( -327672, 4, 0, -262136, 4, 0, -262135, 4, 0, -262126, 2, 0, -196600, 4, 0, -196599, 4, 0, -196598, 4, 0, -196596, 1, 0, -196595, 2, 0, -196594, 2, 0, -196593, 3, 0, -196588, 2, 0, -131065, 6, 0, -131064, 4, 0, -131063, 0, 0, -131062, 4, 0, -131055, 1, 0, -131054, 3, 0, -65528, 4, 0, -65527, 4, 0, -65526, 4, 0, -65525, 4, 0, -65524, 0, 0, -65523, 0, 0, -65522, 0, 0, -65521, 0, 0, -65520, 0, 0, -65519, 0, 0, -65518, 0, 0, -65517, 0, 0, -65516, 0, 0, -65515, 0, 0, -65514, 5, 0, 10, 4, 0, 11, 4, 0, 12, 4, 0, 13, 4, 0, 14, 4, 0, 15, 4, 0, 16, 0, 0, 17, 0, 0, 18, 4, 0, 19, 4, 0, 20, 4, 0, 65547, 4, 0, 65548, 4, 0, 65549, 0, 0, 65550, 0, 0, 65551, 4, 0, 65552, 4, 0, 65553, 4, 0, 65554, 4, 0, 65555, 4, 0, 131084, 4, 0, 131085, 4, 0, 131086, 4, 0, 131087, 0, 0, 131088, 0, 0, 131089, 4, 0 )
 
 [node name="player" type="KinematicBody2D" parent="."]
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 position = Vector2( 861, 613 )
 =======
 position = Vector2( 860, 616 )
+>>>>>>> Stashed changes
+=======
+position = Vector2( 858, 612 )
 >>>>>>> Stashed changes
 script = ExtResource( 4 )
 
@@ -70,9 +75,13 @@ shape = SubResource( 4 )
 position = Vector2( 11, -11 )
 zoom = Vector2( 0.1, 0.1 )
 
+[node name="Camera2D" type="Camera2D" parent="player"]
+current = true
+zoom = Vector2( 0.2, 0.3 )
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="Background" type="Sprite" parent="ParallaxBackground"]
-position = Vector2( 877, 389 )
-scale = Vector2( 0.605, 0.506667 )
+position = Vector2( 991, 624 )
+scale = Vector2( 1.23688, 1.06333 )
 texture = ExtResource( 1 )
