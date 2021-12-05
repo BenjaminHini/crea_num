@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Woodcutter_idle.png-2d6cf5f51b33c0813d1109b3d3484e68.stex"
+path="res://.import/output-onlinepngtools.png-32ef40692f7963b63ed27ef01bfc09a4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/1 Woodcutter/Woodcutter_idle.png"
-dest_files=[ "res://.import/Woodcutter_idle.png-2d6cf5f51b33c0813d1109b3d3484e68.stex" ]
+source_file="res://assets/1 Woodcutter/output-onlinepngtools.png"
+dest_files=[ "res://.import/output-onlinepngtools.png-32ef40692f7963b63ed27ef01bfc09a4.stex" ]
 
 [params]
 
