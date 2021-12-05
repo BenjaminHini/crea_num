@@ -33,12 +33,17 @@ func _physics_process(delta):
 		$AnimatedSprite.play("RunR")
 	else: 
 		movement.x = lerp(movement.x, 0, 0.2)
+<<<<<<< HEAD
 		$AnimatedSprite.play("Idle")
 
 	if is_on_floor():
 		if Input.is_action_just_pressed("jump"):
 			movement.y = -JUMP
 	elif doublesaut:
+=======
+	
+	if is_on_floor():
+>>>>>>> a1218ed6f2052c25f91423c58fd1d97febc07320
 		if Input.is_action_just_pressed("jump"):
 			movement.y = -JUMP
 			doublesaut = false
