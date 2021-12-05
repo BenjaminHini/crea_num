@@ -1,31 +1,41 @@
 extends KinematicBody2D
 
+
 const UP = Vector2(0,-1)
-const JUMP = 50
+const JUMP = 400
 const GRAVITY = 20
-const MAXSPEED = 50
+const MAXSPEED = 150
 const ACCEL = 10
 
-
-
-var movemement = Vector2()
-
-
-func _physics(delta):
+var movement = Vector2()
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _physics_process(delta):
+<<<<<<< Updated upstream
+	movement.y += GRAVITY
 	
-	movemement.y += GRAVITY
+=======
 	
-	movemement.x = clamp(movemement.x, -MAXSPEED, MAXSPEED)
-	
+	movement.y += GRAVITY
+>>>>>>> Stashed changes
+	movement.x = clamp(movement.x, -MAXSPEED, MAXSPEED)
+
 	if Input.is_action_pressed("right"):
-		movemement.x = MAXSPEED
+		movement.x = MAXSPEED
 	elif Input.is_action_pressed("left"):
-		movemement.x = -MAXSPEED
-	else:
-		movemement.x = lerp(movemement.x, 0, 0.2)
-		
+		movement.x = -MAXSPEED
+	else: 
+		movement.x = lerp(movement.x, 0, 0.2)
+	
+<<<<<<< Updated upstream
 	if is_on_floor():
-		if Input.is_action_pressed("space"):
-			movemement.y = -JUMP
-
-	movemement = move_and_slide(movemement, UP)
+		if Input.is_action_pressed("jump"):
+			movement.y = -JUMP
+			
+	#motion = move_and_slide(motion, UP)
+=======
+	#if is_on_floor():
+		if Input.is_action_just_pressed("jump"):
+			movement.y = -JUMP
+			
+	move_and_slide(movement)
+>>>>>>> Stashed changes

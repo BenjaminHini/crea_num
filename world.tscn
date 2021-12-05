@@ -1,13 +1,14 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://background.jpg" type="Texture" id=1]
 [ext_resource path="res://tiles.tres" type="TileSet" id=2]
 [ext_resource path="res://assets/1 Woodcutter/Woodcutter.png" type="Texture" id=3]
 [ext_resource path="res://player.gd" type="Script" id=4]
 
+<<<<<<< Updated upstream
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 13.6912
-height = 3.86269
+radius = 20.0
+height = 0.0
 
 [sub_resource type="Animation" id=2]
 length = 0.001
@@ -26,39 +27,52 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=3]
 resource_name = "stand"
+=======
+[sub_resource type="CapsuleShape2D" id=4]
+height = 15.0
+>>>>>>> Stashed changes
 
 [node name="world" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2( -1219, 30 )
+position = Vector2( -217, 696 )
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 61, 61 )
 format = 1
-tile_data = PoolIntArray( -327668, 2, 0, -262132, 2, 0, -262122, 3, 0, -196596, 2, 0, -196595, 2, 0, -196592, 3, 0, -196591, 3, 0, -196584, 3, 0, -131060, 2, 0, -131059, 2, 0, -131058, 2, 0, -131051, 3, 0, -131050, 3, 0, -65524, 2, 0, -65523, 2, 0, -65522, 2, 0, -65521, 1, 0, -65520, 1, 0, -65519, 1, 0, -65518, 1, 0, -65517, 1, 0, -65516, 1, 0, -65515, 1, 0, -65514, 1, 0, -65513, 1, 0, -65512, 1, 0, -65511, 1, 0, -65510, 1, 0, -65509, 0, 0, 13, 2, 0, 14, 2, 0, 15, 2, 0, 16, 2, 0, 17, 2, 0, 18, 2, 0, 19, 2, 0, 20, 2, 0, 21, 2, 0, 22, 2, 0, 23, 2, 0, 24, 2, 0, 25, 2, 0, 26, 2, 0, 65549, 2, 0, 65550, 2, 0, 65551, 2, 0, 65552, 2, 0, 65553, 2, 0, 65554, 2, 0, 65555, 2, 0, 65556, 2, 0, 65557, 2, 0, 65558, 2, 0, 65559, 2, 0, 65560, 2, 0, 65561, 2, 0, 131086, 2, 0, 131087, 2, 0, 131088, 2, 0, 131089, 2, 0, 131090, 2, 0, 131091, 2, 0, 131092, 2, 0, 131093, 2, 0, 131094, 2, 0, 131095, 2, 0, 131096, 2, 0, 196624, 2, 0, 196625, 2, 0, 196626, 2, 0, 196627, 2, 0, 196628, 2, 0, 196629, 2, 0 )
+tile_data = PoolIntArray( -327670, 2, 0, -262134, 2, 0, -262133, 2, 0, -262122, 3, 0, -196598, 2, 0, -196597, 2, 0, -196592, 3, 0, -196591, 3, 0, -196584, 3, 0, -131062, 2, 0, -131061, 2, 0, -131060, 2, 0, -131051, 3, 0, -131050, 3, 0, -65526, 2, 0, -65525, 2, 0, -65524, 2, 0, -65523, 1, 0, -65522, 1, 0, -65521, 1, 0, -65520, 1, 0, -65519, 1, 0, -65518, 1, 0, -65517, 1, 0, -65516, 1, 0, -65515, 1, 0, -65514, 1, 0, -65513, 1, 0, -65512, 1, 0, -65511, 1, 0, 11, 2, 0, 12, 2, 0, 13, 2, 0, 14, 2, 0, 15, 2, 0, 16, 2, 0, 17, 2, 0, 18, 2, 0, 19, 2, 0, 20, 2, 0, 21, 2, 0, 22, 2, 0, 23, 2, 0, 24, 2, 0, 65549, 2, 0, 65550, 2, 0, 65551, 2, 0, 65552, 2, 0, 65553, 2, 0, 65554, 2, 0, 65555, 2, 0, 65556, 2, 0, 65557, 2, 0, 65558, 2, 0 )
 
 [node name="player" type="KinematicBody2D" parent="."]
+<<<<<<< Updated upstream
+position = Vector2( 861, 613 )
+=======
+position = Vector2( 860, 616 )
+>>>>>>> Stashed changes
 script = ExtResource( 4 )
 
 [node name="Sprite" type="Sprite" parent="player"]
-position = Vector2( -1318, 50 )
+position = Vector2( 5, -8 )
 texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
-position = Vector2( -1326.18, 58.5731 )
+<<<<<<< Updated upstream
+position = Vector2( -4, 3.99998 )
 shape = SubResource( 1 )
-
-[node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2( 23, 3 )
-current = true
-zoom = Vector2( 0.4, 0.4 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="player"]
 anims/RESET = SubResource( 2 )
 anims/stand = SubResource( 3 )
+=======
+position = Vector2( -2, -2.00002 )
+shape = SubResource( 4 )
+>>>>>>> Stashed changes
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2( 11, -11 )
+zoom = Vector2( 0.1, 0.1 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
 [node name="Background" type="Sprite" parent="ParallaxBackground"]
-position = Vector2( -2, -266 )
+position = Vector2( 877, 389 )
 scale = Vector2( 0.605, 0.506667 )
 texture = ExtResource( 1 )
