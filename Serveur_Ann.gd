@@ -20,7 +20,9 @@ func _enter_tree():
 		udp = PacketPeerUDP.new()
 		udp.set_broadcast_enabled(true)
 		udp.set_dest_address('255.255.255.255', diffusion_port)
+		# si des packets sont envoyé à l'adresse 255.255.255.255' tout les clients du meme port reçoivent les packets
 
+#envoie les infos du serveur aux autres clients via le port predefinie grace au socket
 func broadcast():
 	serveur_info.name = Reseau.Pseudo_joueur
 	var packet_message = to_json(serveur_info)

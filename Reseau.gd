@@ -16,7 +16,7 @@ func _ready() -> void:
 	
 
 	for ip2 in IP.get_local_addresses():
-		if ip2.begins_with("192.168."):
+		if ip2.begins_with("192.168.")and not ip.ends_with(".1"):
 			ip=ip2
 
 			

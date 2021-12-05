@@ -1,7 +1,7 @@
 extends Control
 
 
-onready var sereur_ann = $Serveur_Ann
+onready var sereur_ann = $Recepteur
 onready var ip_serveur_texte = $fond/Adresse_ip_serv
 onready var serveur_vbox = $fond/VBoxContainer
 onready var boutton_rejoindre = $fond/saisie_manuelle
