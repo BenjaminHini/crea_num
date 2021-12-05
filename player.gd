@@ -21,7 +21,7 @@ func _physics_process(delta):
 	else: 
 		movement.x = lerp(movement.x, 0, 0.2)
 	
-	#if is_on_floor():
+	if is_on_floor():
 		if Input.is_action_just_pressed("jump"):
 			movement.y = -JUMP
 			
