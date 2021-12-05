@@ -41,7 +41,8 @@ func _on_rejoindre_button_up():
 	Reseau.ip=ip_serveur_texte.text
 	hide()
 	Reseau.join_server()
-
+	var instance_joueur=Global.instance_node_at_location(load("res://world.tscn"),Players,Vector2(0,0))
+	
 
 
 func _on_retour_pressed():

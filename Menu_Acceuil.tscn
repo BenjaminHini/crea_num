@@ -19,6 +19,13 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="background" type="Sprite" parent="Multijoueur_setup"]
+process_priority = -1
+show_behind_parent = true
+position = Vector2( 961.576, 518.694 )
+scale = Vector2( 1.21015, 0.934749 )
+texture = ExtResource( 3 )
+
 [node name="heberger" type="Button" parent="Multijoueur_setup"]
 anchor_left = 0.5
 anchor_top = 0.5
@@ -76,13 +83,6 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="background" type="Sprite" parent="."]
-process_priority = -1
-show_behind_parent = true
-position = Vector2( 961.576, 518.694 )
-scale = Vector2( 1.21015, 0.934749 )
-texture = ExtResource( 3 )
 
 [connection signal="pressed" from="Multijoueur_setup/heberger" to="." method="_on_heberger_pressed"]
 [connection signal="pressed" from="Multijoueur_setup/rejoindre" to="." method="_on_rejoindre_pressed"]
