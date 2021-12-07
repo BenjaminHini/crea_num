@@ -3,9 +3,7 @@
 [ext_resource path="res://Affichage_serveur.gd" type="Script" id=1]
 [ext_resource path="res://Police_menu.tres" type="DynamicFont" id=2]
 
-[node name="Affichage_serveur" type="Label" groups=[
-"Affichage_des_serveurs",
-]]
+[node name="Affichage_serveur" type="Label" groups=["Affichage_des_serveurs"]]
 anchor_right = 1.0
 margin_right = -220.0
 margin_bottom = 130.0
