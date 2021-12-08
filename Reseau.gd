@@ -26,6 +26,8 @@ func _ready() -> void:
 func create_server()-> void:
 	serveur = NetworkedMultiplayerENet.new()
 	serveur.create_server(PORT, JOUEUR_MAX)
+	var msg = "server created"
+	rpc('chat.get_messages', msg)
 	get_tree().set_network_peer(serveur)	
 	Global.instance_node(load("res://Serveur_Ann.tscn"),get_tree().current_scene)
 	

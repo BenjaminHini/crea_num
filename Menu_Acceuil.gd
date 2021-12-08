@@ -42,6 +42,7 @@ func _on_heberger_pressed():
 func _on_rejoindre_pressed():
 	if pseudo.text !="":
 		multijoueur_setup_ui.hide()
+		Reseau.Pseudo_joueur = pseudo.text
 		pseudo.hide()
 			
 		Global.instance_node(load("res://Recherche_serveur.tscn"),self)
